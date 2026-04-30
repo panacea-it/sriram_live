@@ -50,10 +50,8 @@ const OurToppers: React.FC = () => {
   }, { dependencies: [prefersReducedMotion], scope: containerRef });
 
   const toppers = [
-  
-    { name: 'ANUJ AGNIHOTRI',        rank: 'AIR 01', course: 'GS Foundation Course', img: 'ANUJ-AGNIHOTRI (AIR-1).png' },
-   
-  ];
+  { name: 'ANUJ AGNIHOTRI',        rank: 'AIR 01', course: 'GS Foundation Course', img: 'ANUJ-AGNIHOTRI (AIR-1).png' },
+];
 
   const numSets = 5;
   const displayToppers = Array(numSets).fill(toppers).flat();
@@ -166,7 +164,7 @@ const OurToppers: React.FC = () => {
               <div className="flex flex-col items-center min-w-[200px] px-4 py-4 cursor-pointer">
 
                 {/* Image — square container + object-contain shows full shape uniformly */}
-                <div className="relative w-[250px] h-[280px] mb-4 flex-shrink-0">
+                <div className="relative w-[230px] h-[280px] mb-4 flex-shrink-0">
                   <Image
                     src={`/assets/ourtoppers/_originals/${topper.img}`}
                     alt={topper.name}
