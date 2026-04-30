@@ -50,18 +50,17 @@ const OurToppers: React.FC = () => {
   }, { dependencies: [prefersReducedMotion], scope: containerRef });
 
   const toppers = [
-  { name: 'ANUJ AGNIHOTRI',        rank: 'AIR 01', course: 'GS Foundation Course', img: 'ANUJ-AGNIHOTRI (AIR-1).png' },
-  { name: 'AAKASH GARG',           rank: 'AIR 05', course: 'GS Foundation Course', img: 'AAKASH GARG (AIR - 5).png' },
-  { name: 'ADITYA VIKRAM AGARWAL', rank: 'AIR 09', course: 'GS Foundation Course', img: 'Aditya Vikram Agarwal (AIR - 9).png' },
-  { name: 'AKSHIT BHARDWAJ',       rank: 'AIR 12', course: 'GS Foundation Course', img: 'AKSHIT-BHARDWAJ (AIR-12).png' },
-  { name: 'CHITWAN JAIN',          rank: 'AIR 17', course: 'GS Foundation Course', img: 'CHITWAN-JAIN (AIR-17).png' },
-  { name: 'ABHI JAIN',             rank: 'AIR 34', course: 'GS Foundation Course', img: 'ABHI JAIN (AIR - 34).png' },
-  { name: 'MUSKAN',                rank: 'AIR 36', course: 'GS Foundation Course', img: 'MUSKAN-AIR-36.png' },
-  { name: 'ABHISHEK SHARMA',       rank: 'AIR 38', course: 'GS Foundation Course', img: 'ABHISHEK-SHARMA-AIR-38.png' },
-  { name: 'DIKSHA RAI',            rank: 'AIR 40', course: 'GS Foundation Course', img: 'DIKSHA-RAI(AIR-40).png' },
-  { name: 'ANIKET RANJAN',         rank: 'AIR 48', course: 'GS Foundation Course', img: 'ANIKET-RANJAN(AIR-48).png' },
-  { name: 'ISHITWA ANAND',         rank: 'AIR 50', course: 'GS Foundation Course', img: 'ISHITWA-ANAND(AIR-50).png' },
-];
+    { name: 'AAKASH GARG',           rank: 'AIR 05', course: 'GS Foundation Course', img: 'AAKASH GARG (AIR - 5).png' },
+    { name: 'ABHI JAIN',             rank: 'AIR 34', course: 'GS Foundation Course', img: 'ABHI JAIN (AIR - 34).png' },
+    { name: 'ABHISHEK SHARMA',       rank: 'AIR 38', course: 'GS Foundation Course', img: 'ABHISHEK-SHARMA-AIR-38.png' },
+    { name: 'Aditya Vikram Agarwal', rank: 'AIR 09', course: 'GS Foundation Course', img: 'Aditya Vikram Agarwal (AIR - 9).png' },
+    { name: 'AKSHIT BHARDWAJ',       rank: 'AIR 12', course: 'GS Foundation Course', img: 'AKSHIT-BHARDWAJ (AIR-12).png' },
+    { name: 'ANUJ AGNIHOTRI',        rank: 'AIR 01', course: 'GS Foundation Course', img: 'ANUJ-AGNIHOTRI (AIR-1).png' },
+    { name: 'CHITWAN JAIN',          rank: 'AIR 17', course: 'GS Foundation Course', img: 'CHITWAN-JAIN (AIR-17).png' },
+    { name: 'DIKSHA RAI',            rank: 'AIR 40', course: 'GS Foundation Course', img: 'DIKSHA-RAI(AIR-40).png' },
+    { name: 'ISHITWA ANAND',         rank: 'AIR 50', course: 'GS Foundation Course', img: 'ISHITWA-ANAND(AIR-50).png' },
+    { name: 'MUSKAN',                rank: 'AIR 36', course: 'GS Foundation Course', img: 'MUSKAN-AIR-36.png' },
+  ];
 
   const numSets = 5;
   const displayToppers = Array(numSets).fill(toppers).flat();
@@ -174,12 +173,12 @@ const OurToppers: React.FC = () => {
               <div className="flex flex-col items-center min-w-[200px] px-4 py-4 cursor-pointer">
 
                 {/* Image — square container + object-contain shows full shape uniformly */}
-                <div className="relative w-[230px] h-[280px] mb-4 flex-shrink-0">
+                <div className="relative w-[180px] h-[180px] mb-4 flex-shrink-0">
                   <Image
                     src={`/assets/ourtoppers/_originals/${topper.img}`}
                     alt={topper.name}
                     fill
-                    sizes="220px"
+                    sizes="180px"
                     className="object-contain"
                   />
                 </div>
